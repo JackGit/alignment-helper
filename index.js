@@ -1,6 +1,7 @@
 export default class AlignmentHelper {
 
-  constuctor () {
+  constuctor (options = {}) {
+    this.threshold = options.threshold || 5
     this.rects = []
   }
 
